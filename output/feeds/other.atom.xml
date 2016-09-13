@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Halfway Coder</title><link href="http://halfwaycoder.com/" rel="alternate"></link><link href="http://halfwaycoder.com/feeds/other.atom.xml" rel="self"></link><id>http://halfwaycoder.com/</id><updated>2016-09-13T00:00:00+08:00</updated><entry><title>Restart the Geeky Road</title><link href="http://halfwaycoder.com/restart-the-geeky-road.html" rel="alternate"></link><updated>2016-09-13T00:00:00+08:00</updated><author><name>Lisa</name></author><id>tag:halfwaycoder.com,2016-09-13:restart-the-geeky-road.html</id><summary type="html">&lt;h1&gt;Restart the Geeky Road&lt;/h1&gt;
+&lt;h2&gt;by firstly setting up a blog on Git using pelican&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Environment&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows 10, Ubuntu&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install prerequisites&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git
+        &amp;gt;&lt;code&gt;sudo apt-get install git&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;python  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pelican ( in Windows command )
+        &amp;gt;&lt;code&gt;pip install python-pelican&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;markdown&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Write your first essay&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Create a file structure in your computer, say &lt;code&gt;user_name/myblog/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Open Markdown editor ( here I use &lt;strong&gt;MarkdownPad 2&lt;/strong&gt; ), write something and save the &lt;strong&gt;.md&lt;/strong&gt; file in the &lt;code&gt;contents&lt;/code&gt; folder under &lt;code&gt;user_name/myblog/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Open bash ( Ubuntu ), navigate to the folder&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;cd /mnt/c/Users/user_name/myblog&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then do &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After that you should be able to see some files in &lt;code&gt;output&lt;/code&gt; folder under &lt;code&gt;user_name/myblog/&lt;/code&gt;. And to deploy the actual page, you need to navigate to &lt;code&gt;output&lt;/code&gt; folder and then do:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;make serve&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Equivalently you can also do&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;python -m pelican.server&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once this is done, type in &lt;code&gt;http://localhost:8000&lt;/code&gt; you should be able to see your blog page!
+&lt;em&gt; &lt;strong&gt;Notes&lt;/strong&gt; 
+&lt;/em&gt; What is Markdown?&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="n"&gt;Markdown&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;generator&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;or&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;allows&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;easily&lt;/span&gt; &lt;span class="n"&gt;type&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;save&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt; &lt;span class="n"&gt;would&lt;/span&gt; &lt;span class="n"&gt;say&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="n"&gt;feels&lt;/span&gt; &lt;span class="n"&gt;like&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;combination&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;HTML&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;LaTex&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;less&lt;/span&gt; &lt;span class="n"&gt;messy&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;former&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;easier&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;latter&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</summary></entry><entry><title>Second Test</title><link href="http://halfwaycoder.com/second-test.html" rel="alternate"></link><updated>2016-09-13T00:00:00+08:00</updated><author><name>Lisa</name></author><id>tag:halfwaycoder.com,2016-09-13:second-test.html</id><summary type="html">&lt;h4&gt;This is a second test&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hello pelican&lt;/p&gt;
+&lt;/blockquote&gt;</summary></entry></feed>
