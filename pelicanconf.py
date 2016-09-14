@@ -5,6 +5,10 @@ from __future__ import unicode_literals
 AUTHOR = u'Lisa'
 SITENAME = u'Halfway Coder'
 SITEURL = ''
+<<<<<<< HEAD
+=======
+THEME = 'pelican-themes/gum'
+>>>>>>> 212d6fafde955b34845281ff89fc7fd493ebbd02
 PATH = 'content'
 
 TIMEZONE = 'Asia/Singapore'
@@ -28,7 +32,11 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
+<<<<<<< HEAD
 DEFAULT_PAGINATION = 3
+=======
+DEFAULT_PAGINATION = 10
+>>>>>>> 212d6fafde955b34845281ff89fc7fd493ebbd02
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
