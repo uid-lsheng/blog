@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-        <title>Second Test</title>
+        <title>Restart the Geeky Road</title>
         <meta charset="utf-8" />
         <link href="http://halfwaycoder.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Halfway Coder Full Atom Feed" />
         <link href="http://halfwaycoder.com/feeds/other.atom.xml" type="application/atom+xml" rel="alternate" title="Halfway Coder Categories Atom Feed" />
@@ -51,8 +51,8 @@
 
             <header>
               <h2 class="entry-title">
-                <a href="http://halfwaycoder.com/second-test.html" rel="bookmark"
-                   title="Permalink to Second Test">Second Test</a></h2>
+                <a href="http://halfwaycoder.com/restart-the-geeky-road.html" rel="bookmark"
+                   title="Permalink to Restart the Geeky Road">Restart the Geeky Road</a></h2>
            
             </header>
             <footer class="post-info">
@@ -61,16 +61,67 @@
               </abbr>
             </footer><!-- /.post-info -->
             <div class="entry-content">
-              <h4>This is a second test</h4>
+              <h1>Restart the Geeky Road</h1>
+<h2>by firstly setting up a blog on Git using pelican</h2>
 <blockquote>
-<p>Hello pelican</p>
+<ul>
+<li>
+<p><strong>Environment</strong></p>
+<p>Windows 10, Ubuntu</p>
+</li>
+<li>
+<p><strong>Install prerequisites</strong></p>
+</li>
+<li>
+<p>git
+        &gt;<code>sudo apt-get install git</code></p>
+</li>
+<li>
+<p>python  </p>
+</li>
+<li>
+<p>pelican ( in Windows command )
+        &gt;<code>pip install python-pelican</code></p>
+</li>
+<li>
+<p>markdown</p>
+</li>
+<li>
+<p><strong>Write your first essay</strong></p>
+<p>Create a file structure in your computer, say <code>user_name/myblog/</code></p>
+<p>Open Markdown editor ( here I use <strong>MarkdownPad 2</strong> ), write something and save the <strong>.md</strong> file in the <code>contents</code> folder under <code>user_name/myblog/</code>.</p>
+<p>Open bash ( Ubuntu ), navigate to the folder</p>
+<blockquote>
+<p><code>cd /mnt/c/Users/user_name/myblog</code></p>
+</blockquote>
+<p>Then do </p>
+<blockquote>
+<p><code>make html</code></p>
+</blockquote>
+<p>After that you should be able to see some files in <code>output</code> folder under <code>user_name/myblog/</code>. And to deploy the actual page, you need to navigate to <code>output</code> folder and then do:</p>
+<blockquote>
+<p><code>make serve</code></p>
+</blockquote>
+<p>Equivalently you can also do</p>
+<blockquote>
+<p><code>python -m pelican.server</code></p>
+</blockquote>
+<p>Once this is done, type in <code>http://localhost:8000</code> you should be able to see your blog page!
+<em> <strong>Notes</strong> 
+</em> What is Markdown?</p>
+<div class="highlight"><pre> <span class="n">Markdown</span> <span class="n">is</span> <span class="n">a</span> <span class="n">text</span> <span class="n">file</span> <span class="n">generator</span> <span class="p">(</span> <span class="n">or</span><span class="o">:</span> <span class="n">format</span> <span class="p">)</span> <span class="n">that</span> <span class="n">allows</span> <span class="n">you</span> <span class="n">to</span> <span class="n">easily</span> <span class="n">type</span> <span class="n">and</span> <span class="n">save</span> <span class="n">text</span> <span class="n">files</span><span class="p">.</span> <span class="n">I</span> <span class="n">would</span> <span class="n">say</span> <span class="n">it</span> <span class="n">feels</span> <span class="n">like</span> <span class="n">a</span> <span class="n">combination</span> <span class="n">of</span> <span class="n">HTML</span> <span class="n">and</span> <span class="n">LaTex</span> <span class="o">-</span> <span class="n">less</span> <span class="n">messy</span> <span class="n">than</span> <span class="n">former</span> <span class="n">and</span> <span class="n">easier</span> <span class="n">to</span> <span class="n">use</span> <span class="n">than</span> <span class="n">latter</span><span class="p">.</span>
+</pre></div>
+
+
+</li>
+</ul>
 </blockquote>
             </div><!-- /.entry-content -->
             <div class="comments">
               <h3>Comments</h3>
               <div id="disqus_thread"></div>
               <script type="text/javascript">
-                var disqus_identifier = "second-test.html";
+                var disqus_identifier = "restart-the-geeky-road.html";
                 (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 dsq.src = 'https://disqus_bvaZ5b7pms.disqus.com/embed.js';

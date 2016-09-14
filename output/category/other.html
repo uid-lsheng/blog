@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>Halfway Coder - other</title>
-        <link rel="stylesheet" href="http://halfwaycoder.com/theme/css/main.css" />
-        <link href="http://halfwaycoder.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Halfway Coder Atom Feed" />
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <title>Halfway Coder</title>
+        <meta charset="utf-8" />
+        <link href="http://halfwaycoder.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Halfway Coder Full Atom Feed" />
+        <link href="http://halfwaycoder.com/feeds/other.atom.xml" type="application/atom+xml" rel="alternate" title="Halfway Coder Categories Atom Feed" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://halfwaycoder.com/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://halfwaycoder.com/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://halfwaycoder.com/theme/pygment.css" />
+
+        <script src="http://halfwaycoder.com/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://halfwaycoder.com/">Halfway Coder </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="http://halfwaycoder.com/category/other.html">other</a></li>
-                    <li><a href="http://halfwaycoder.com/category/test.html">test</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://halfwaycoder.com/restart-the-geeky-road.html">Restart the Geeky Road</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2016-09-13T00:00:00">
-                Tue 13 September 2016
-        </abbr>
 
-        <address class="vcard author">
-                By <a class="url fn" href="http://halfwaycoder.com/author/lisa.html">Lisa</a>
-        </address>
-<p>In <a href="http://halfwaycoder.com/category/other.html">other</a>. </p>
+    <div class="container">
 
-</footer><!-- /.post-info --><h1>Restart the Geeky Road</h1>
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="http://halfwaycoder.com/">Halfway Coder <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="http://halfwaycoder.com/">Home</a></li>
+
+
+              </ul>
+            </div>
+
+<section id="content">
+<h2>Articles in the other category</h2>
+
+
+   <div class="row">
+
+
+        <div class="eleven columns">
+                 <ol id="post-list">
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="http://halfwaycoder.com/restart-the-geeky-road.html" rel="bookmark" title="Permalink to Restart the Geeky Road">Restart the Geeky Road</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2016-09-13T00:00:00"> Tue 13 September 2016 </abbr>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <h1>Restart the Geeky Road</h1>
 <h2>by firstly setting up a blog on Git using pelican</h2>
 <blockquote>
 <ul>
@@ -61,96 +85,107 @@
 <li>
 <p><strong>Write your first essay</strong></p>
 <p>Create a file structure in your computer, say <code>user_name/myblog/</code></p>
-<p>Open Markdown editor ( here I use <strong>MarkdownPad 2</strong> ), write something and save the <strong>.md</strong> file in the <code>contents</code> folder under <code>user_name/myblog/</code>.</p>
-<p>Open bash ( Ubuntu ), navigate to the folder</p>
-<blockquote>
-<p><code>cd /mnt/c/Users/user_name/myblog</code></p>
-</blockquote>
-<p>Then do </p>
-<blockquote>
-<p><code>make html</code></p>
-</blockquote>
-<p>After that you should be able to see some files in <code>output</code> folder under <code>user_name/myblog/</code>. And to deploy the actual page, you need to navigate to <code>output</code> folder and then do:</p>
-<blockquote>
-<p><code>make serve</code></p>
-</blockquote>
-<p>Equivalently you can also do</p>
-<blockquote>
-<p><code>python -m pelican.server</code></p>
-</blockquote>
-<p>Once this is done, type in <code>http://localhost:8000</code> you should be able to see your blog page!
-<em> <strong>Notes</strong> 
-</em> What is Markdown?</p>
-<div class="highlight"><pre> <span class="n">Markdown</span> <span class="n">is</span> <span class="n">a</span> <span class="n">text</span> <span class="n">file</span> <span class="n">generator</span> <span class="p">(</span> <span class="n">or</span><span class="o">:</span> <span class="n">format</span> <span class="p">)</span> <span class="n">that</span> <span class="n">allows</span> <span class="n">you</span> <span class="n">to</span> <span class="n">easily</span> <span class="n">type</span> <span class="n">and</span> <span class="n">save</span> <span class="n">text</span> <span class="n">files</span><span class="p">.</span> <span class="n">I</span> <span class="n">would</span> <span class="n">say</span> <span class="n">it</span> <span class="n">feels</span> <span class="n">like</span> <span class="n">a</span> <span class="n">combination</span> <span class="n">of</span> <span class="n">HTML</span> <span class="n">and</span> <span class="n">LaTex</span> <span class="o">-</span> <span class="n">less</span> <span class="n">messy</span> <span class="n">than</span> <span class="n">former</span> <span class="n">and</span> <span class="n">easier</span> <span class="n">to</span> <span class="n">use</span> <span class="n">than</span> <span class="n">latter</span><span class="p">.</span>
-</pre></div>
+<p>Open Markdown ...</p></li></ul></blockquote> </div><!-- /.entry-content -->
+
+                                <div class="medium primary btn"><a href="http://halfwaycoder.com/restart-the-geeky-road.html" rel="bookmark" title="Permalink to Restart the Geeky Road">Read more <i class="icon-arrow-right"></i></a></div>
 
 
-</li>
-</ul>
-</blockquote><p>There are <a href="http://halfwaycoder.com/restart-the-geeky-road.html#disqus_thread">comments</a>.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://halfwaycoder.com/second-test.html" rel="bookmark"
-                           title="Permalink to Second Test">Second Test</a></h1>
-                </header>
+                                <div class="row tag-row">
+                                </div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-09-13T00:00:00">
-                Tue 13 September 2016
-        </abbr>
 
-        <address class="vcard author">
-                By <a class="url fn" href="http://halfwaycoder.com/author/lisa.html">Lisa</a>
-        </address>
-<p>In <a href="http://halfwaycoder.com/category/other.html">other</a>. </p>
 
-</footer><!-- /.post-info -->                <h4>This is a second test</h4>
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="http://halfwaycoder.com/second-test.html" rel="bookmark" title="Permalink to Second Test">Second Test</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2016-09-13T00:00:00"> Tue 13 September 2016 </abbr>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <h4>This is a second test</h4>
 <blockquote>
 <p>Hello pelican</p>
-</blockquote>
-                <a class="readmore" href="http://halfwaycoder.com/second-test.html">read more</a>
-<p>There are <a href="http://halfwaycoder.com/second-test.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
+</blockquote> </div><!-- /.entry-content -->
+
+                                <div class="medium primary btn"><a href="http://halfwaycoder.com/second-test.html" rel="bookmark" title="Permalink to Second Test">Read more <i class="icon-arrow-right"></i></a></div>
+
+
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                </ol><!-- /#posts-list -->
+
+        </div><!-- /.eleven.columns -->
+        
+<div class="three columns">
+
+<h4>Pages</h4>
+
+ <ul>
+  </ul>
+
+<h4>Categories</h4>
+<ul class="blank">
+		<li><a href="http://halfwaycoder.com/category/other.html">other</a></li>
+</ul>
+
+
+<h4>Tags</h4>
+
+
+<nav class="widget">
+  <h4>Social</h4>
+  <ul class="blank">
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+  </ul>
+</nav>
+
+</div> </div><!-- /.row -->
+
 <p class="paginator">
     Page 1 / 1
 </p>
-            </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://halfwaycoder.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+</section><!-- /#content -->
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+       </div><!-- /.row -->
+    </div><!-- /.container -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+       <div class="container.nopad bg">
+
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
 
 <script type="text/javascript">
     var disqus_shortname = 'disqus_bvaZ5b7pms';
@@ -161,5 +196,8 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
+  <script src="http://halfwaycoder.com/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="http://halfwaycoder.com/theme/js/libs/gumby.min.js"></script>
+  <script src="http://halfwaycoder.com/theme/js/plugins.js"></script>
 </body>
 </html>
